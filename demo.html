@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #Data {
+            width: 1080px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #Data ul:nth-child(1) {
+            background-color: silver;
+        }
+        
+        #Data ul {
+            width: 1080px;
+            height: 70px;
+            /* border: 1px solid red */
+            margin: auto;
+            padding: 0;
+            clear: both;
+        }
+        
+        #Data ul li {
+            width: 90px;
+            height: 80px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            line-height: 70px;
+            margin-left: 2px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+            /*border: 1px solid red; */
+        }
+        
+        .Data_top {
+            width: 1080px;
+            height: 67px;
+            /* border: 1px solid; */
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+        
+        input {
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom-color: black;
+            /* height: 30px; */
+        }
+        
+        .change {
+            /* width: 300px; */
+            /* height: 350px; */
+            /* background-color: lightskyblue; */
+            background-color: rgba(55, 55, 55, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            display: none;
+        }
+        
+        .abc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 250px;
+            height: 350px;
+            background-color: lightskyblue;
+            margin-left: -125px;
+            margin-top: -175px;
+            padding-left: 10px;
+        }
+        
+        .change input {
+            margin-top: 10px;
+            height: 20px;
+        }
+        
+        #btn,
+        #cancel {
+            margin: 10 auto;
+            border: 1px solid #15aafb;
+            width: 67px;
+            height: 32px;
+            background-color: #15aafb;
+            color: #fff;
+            margin-left: 30px;
+        }
+        
+        .btn2,
+        .btn {
+            width: 67px;
+            height: 32px;
+            background-color: #15aafb;
+            border: 1px solid #15aafb;
+            color: #fff;
+            margin-left: 20px;
+            border-radius: 3px;
+        }
+        
+        #male {
+            margin-left: 128px;
+        }
+        
+        .txt1,
+        .txt2 {
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+
+        <div class="Data_top">
+            姓名:<input type="text" class="txt1" placeholder="请输入姓名"> 电话:
+            <input type="text" class="txt2" placeholder="请输入号码">
+            <input type="button" value="查询" class="btn2">
+            <input type="button" value="添加" class="btn">
+
+            <input type="radio" name="sex" id="male" value="男">男
+            <input type="radio" name="sex" id="female" value="女">女
+        </div>
+        <div id="Data">
+
+
+        </div>
+
+
+
+        <div class="change">
+            <div class=abc "">
+                <form action="">
+                    学号:<input type="text"> <br>
+                    <!--  -->
+                    姓名:<input type="text"><br> 性别:
+                    <input type="text" name="sex" value=""> <br> 电话:
+                    <input type="text"><br> 籍贯:
+                    <input type="text"><br> 简介:
+                    <input type="text"><br> 生日:
+                    <input type="text"><br>
+                    <input type="button" name="sub" value="提交" id="btn">
+                    <input type="button" value="取消" id="cancel">
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="demo.js"></script>
+</body>
+
+</html>
